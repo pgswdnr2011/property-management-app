@@ -15,7 +15,6 @@ function PropertyCard({ property }) {
 
   return (
     <div className="bg-white rounded-xl shadow-md p-4 mb-6 max-w-2xl mx-auto">
-      {/* Single Test Image */}
       <div className="mb-4">
         <img
           src={editedProperty.images[0]}
@@ -24,7 +23,6 @@ function PropertyCard({ property }) {
         />
       </div>
 
-      {/* Address */}
       <h2 className="text-xl text-black-700 font-semibold mb-3">
         {isEditing ? (
           <input
@@ -39,7 +37,6 @@ function PropertyCard({ property }) {
         )}
       </h2>
 
-      {/* Property Details */}
       {[
         "rentAmount",
         "centralAir",
@@ -68,7 +65,6 @@ function PropertyCard({ property }) {
         </p>
       ))}
 
-      {/* Edit/Save Button */}
       <button
         onClick={handleToggleEdit}
         className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
