@@ -40,8 +40,7 @@ function App() {
   ];
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold mb-4 text-black-700">Property Management App</h1>
+    <div className="rounded-lg bg-gray-100 min-h-screen">
       {properties.map((property) => (
         <PropertyCard key={property.id} property={property} />
       ))}
